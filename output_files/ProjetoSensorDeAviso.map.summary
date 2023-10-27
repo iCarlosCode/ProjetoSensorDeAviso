@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Oct 26 23:48:40 2023
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : ProjetoSensorDeAviso
+Top-level Entity Name : ProjetoSensorDeAviso
+Family : Cyclone IV E
+Total logic elements : 117
+    Total combinational functions : 96
+    Dedicated logic registers : 67
+Total registers : 67
+Total pins : 23
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,67 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+entity MaquinaDeAlarme is
+	 Port (clk: in STD_LOGIC;
+			dezena: out unsigned(3 downto 0) := (others => '0');
+			s_motor: out std_logic_vector(1 downto 0)
+		 );
+		 
+
+end MaquinaDeAlarme;
+
+architecture a of MaquinaDeAlarme is
+	 type State_Type is (SEGURO, CUIDADO, PERIGO);
+	 
+	 signal estado: State_type;
+	 signal saida_motor: std_logic_vector(1 downto 0);
+begin
+	 
+	 process(clk, estado, dezena)
+	 begin
+ 
+	 if(rising_edge(clk)) then 
+	 
+	 
+	 	case estado is
+			when SEGURO=> 
+	 			  saida_motor<= "00";
+ 
+	 			--If (d="1") then
+	 			--	 estado<=PERIGO;
+	 		   --else 
+	 			--	 estado<=SEGURO;
+	 			--end if;
+				
+				if (dezena < 5) then
+					estado<=CUIDADO;
+				end if;
+			when CUIDADO=> 
+	 			  saida_motor<= "01";
+ 
+	 			  --If (d="1") then
+	 				--	estado<=PERIGO;
+	 			  --else
+	 				--	estado<=CUIDADO;
+	 			  --end if;
+				  if (dezena < 3) then
+						estado<=PERIGO;
+				  end if;
+			when PERIGO=> 
+	 			  saida_motor<= "10";
+	   
+	 			  --If (d="1") then
+	 				--	estado<=SEGURO;
+	 			  --else
+	 				--	estado<=PERIGO;
+	 			  --end if;
+				  if (dezena > 3) then
+						estado<=CUIDADO;
+				  end if;
+		end case;
+    end if;
+	 
+	end process;
+	
+	s_motor <= saida_motor;
+end a;

@@ -1,0 +1,156 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/20.1/ProjetoSensorDeAviso/simulation/qsim
+Ehard_block
+Z1 w1698374768
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 76OUjOFMM1Jzd<9936DA;3
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z7 DPx10 cycloneive 21 cycloneive_components 0 22 dANj__M<MaN@;H9Tkm=iP1
+!i122 14
+R0
+Z8 8ProjetoSensorDeAviso.vho
+Z9 FProjetoSensorDeAviso.vho
+l0
+L35 1
+VB]0;STalBkCB1_B4BXQDW2
+!s100 >mXi5[`cD`bFC`UBKA<om3
+Z10 OV;C;2020.1;71
+32
+Z11 !s110 1698374772
+!i10b 1
+Z12 !s108 1698374772.000000
+Z13 !s90 -work|work|ProjetoSensorDeAviso.vho|
+Z14 !s107 ProjetoSensorDeAviso.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 hard_block 0 22 B]0;STalBkCB1_B4BXQDW2
+!i122 14
+l65
+L51 20
+Via>5o7W??azG@W@@eFOTF0
+!s100 [5;Wd8QGQ>@2NGoJ1I]Y43
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Eprojetosensordeaviso
+R1
+Z17 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R3
+R7
+R2
+Z18 DPx6 altera 11 dffeas_pack 0 22 H5F:RRfLz82T3`4>@b7mS3
+R4
+R5
+R6
+Z19 DPx6 altera 28 altera_primitives_components 0 22 VSD=32;3391kSOd?PDZYj3
+!i122 14
+R0
+R8
+R9
+l0
+L80 1
+VL9WWG_zDlMU4C?UUNWn;o1
+!s100 [=gSkaQ4:Q`_@odd8U6BR2
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R17
+R3
+R7
+R2
+R18
+R4
+R5
+R6
+R19
+DEx4 work 20 projetosensordeaviso 0 22 L9WWG_zDlMU4C?UUNWn;o1
+!i122 14
+l332
+L118 3463
+V5foFCGnbhkfR`lh`1<6SQ1
+!s100 dTfP`i5JF]4KMz@hEKMHK3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Eprojetosensordeaviso_vhd_vec_tst
+Z20 w1698374764
+R5
+R6
+!i122 15
+R0
+Z21 8Waveform.vwf.vht
+Z22 FWaveform.vwf.vht
+l0
+L32 1
+VzCB?427gAHdJP<bJ6o_=]2
+!s100 A4MP5R7J=ahOcDzAzkMTC1
+R10
+32
+Z23 !s110 1698374773
+!i10b 1
+R12
+Z24 !s90 -work|work|Waveform.vwf.vht|
+Z25 !s107 Waveform.vwf.vht|
+!i113 1
+R15
+R16
+Aprojetosensordeaviso_arch
+R5
+R6
+Z26 DEx4 work 32 projetosensordeaviso_vhd_vec_tst 0 22 zCB?427gAHdJP<bJ6o_=]2
+!i122 15
+l55
+Z27 L34 98
+Z28 V<bk6:XzU4ng0a[2Ji]]F_3
+Z29 !s100 niNJliXEYdBSHzd71^_4n0
+R10
+32
+R23
+!i10b 1
+R12
+R24
+R25
+!i113 1
+R15
+R16

@@ -1,0 +1,31 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity ProjetoSensorDeAviso is
+    Port (
+        Clock       : in  STD_LOGIC;
+        Trigger     : out STD_LOGIC;
+        Echo        : in  STD_LOGIC;
+        Distance    : out INTEGER range 0 to 9999;
+        Vibration   : out STD_LOGIC
+    );
+end ProjetoSensorDeAviso;
+
+architecture teste of ProjetoSensorDeAviso is
+
+component MEDIDOR_DE_COMPRIMENTO
+	port (clk: in STD_LOGIC;
+		unidades_7seg: out std_logic_vector(6 downto 0);
+		 dezenas_7seg: out std_logic_vector(6 downto 0);
+		 --sensor
+		 sensor_disp: out STD_LOGIC;
+		 sensor_eco: in STD_LOGIC
+     );
+end component;
+
+begin
+
+	clkdiv: CLOCK_DIVIDER PORT MAP (clock_50mhz, clock_divided);
+end teste;
